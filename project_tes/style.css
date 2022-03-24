@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Medium.woff2  ") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pragmatica";
+    src: url("fonts/Pragmatica-Light.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Bold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Pragmatica";
+    src: url("fonts/Pragmatica-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background: #808080;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.сard-image {
+    display: flex;
+    background-color: #222265;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 196px;
+    position: relative;
+}
+
+.card {
+    background: #ffffff;
+    width: 400px;
+    height: 552px;
+    border-radius: 20px;
+    padding: 40px 32px 32px 32px;
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #323340;
+    z-index: 2;
+    position: relative;
+}
+
+.card-text {
+    font-family: "Pragmatica", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555665;
+    width: 333px;
+}
+
+.card-number {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100px;
+    color: #dadae8;
+    z-index: -1;
+    position: absolute;
+    left: -15px;
+    top: -33px
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-magnifier {
+    background-image: url(images/magnifier.svg);
+    width: 29px;
+    height: 29px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+
+.swiper-pagination-current {
+    font-family: "Pragmatica", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #a0a0b1;
+}
+
+.swiper-pagination-total {
+    font-family: "Pragmatica", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #a0a0b1;
+}
+
+.swiper-button-prev {
+    background-image: url(images/arrow\ left.svg);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    background-image: url(images/arrow\ right.svg);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.swiper-button-next:after {
+    display: none;
+}
+.swiper-button-prev:after {
+    display: none;
+}
+/* swiper */
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        width: 345px;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 25%;
+    }
+
+    .swiper-pagination {
+        display: block;
+    }
+
+
+}
